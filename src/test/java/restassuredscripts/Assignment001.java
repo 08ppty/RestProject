@@ -20,7 +20,7 @@ public class Assignment001 {
 		
 		
 		logger.info("Course End Project - Assignment001 - Post Request");
-		File file = new File("C:\\Users\\malay\\SL_eclipse_workspace\\Phase-3-RestAssured-Demo\\src\\main\\resource\\data.json");
+		File file = new File("C:\\Users\\master\\aa\\AssignmentSelenium\\RestAssured\\src\\main\\resource\\data.json");
 		int id = RestAssured.given()
 				.baseUri("https://petstore.swagger.io/v2/pet")
 				.contentType(ContentType.JSON)
