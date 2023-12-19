@@ -34,7 +34,7 @@ public class Assignment002 {
 	@Test(priority = '2', dependsOnMethods = "assignment002Post")
 	public void assignment002Put() {
 		File file = new File(
-				"C:\\Users\\malay\\SL_eclipse_workspace\\Phase-3-RestAssured-Demo\\src\\main\\resource\\dataput.json");
+				C:\Users\master\aa\AssignmentSelenium\RestAssured\src\main\resource\dataput.json);
 		int id = RestAssured.given().baseUri("https://petstore.swagger.io/v2/pet/").contentType(ContentType.JSON)
 				.body(file).when().put().then().statusCode(200).log().all()
 				.body("status", Matchers.equalTo("available_QA")).extract().path("id");
