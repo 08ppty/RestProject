@@ -19,7 +19,7 @@ public class Assignment002 {
 	public void assignment002Post() {
 		logger.info("Course End project - Assignment002 - POST request");
 		File file = new File(
-				"C:\\Users\\malay\\SL_eclipse_workspace\\Phase-3-RestAssured-Demo\\src\\main\\resource\\data.json");
+				"C:\\Users\\master\\aa\\AssignmentSelenium\\RestAssured\\src\\main\\resource\\data.json");
 		int id = RestAssured.given().baseUri("https://petstore.swagger.io/v2/pet").contentType(ContentType.JSON)
 				.body(file).when().post().then().statusCode(200).log().all().body("name", Matchers.equalTo("Doggie"))
 				.extract().path("id");
